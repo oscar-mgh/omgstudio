@@ -158,7 +158,7 @@ const handleSubmit = async () => {
             </p>
 
             <button
-              class="mt-2 inline-flex min-h-[51px] items-center justify-center gap-4 bg-brand-300 px-5 text-sm font-bold text-brand-950 transition hover:bg-slate-200 disabled:opacity-50"
+              class="mt-2 inline-flex min-h-[51px] items-center justify-center gap-4 bg-brand-300 px-5 text-sm font-bold text-brand-950 transition hover:bg-slate-200 disabled:opacity-50 cursor-pointer"
               type="submit"
               :disabled="isSubmitting">
               {{ isSubmitting ? 'Enviando...' : 'Enviar mensaje' }}

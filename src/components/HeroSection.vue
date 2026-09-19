@@ -22,24 +22,23 @@ defineEmits(['contact', 'plans']);
           @click="$emit('contact')">
           Quiero mi sitio web
         </button>
-        <button
-          class="inline-flex min-h-[51px] items-center gap-4 bg-transparent px-0 text-sm font-bold text-slate-100 rounded cursor-pointer transition-transform hover:-translate-y-1"
-          @click="$emit('plans')">
-          Ver planes <span class="text-xl">↓</span>
-        </button>
       </div>
-      <div class="pb-6 mt-12 grid grid-cols-3 gap-4 lg:mt-18.75 lg:gap-8 text-center max-w-xl">
+      <div class="pb-6 mt-12 grid grid-cols-4 gap-4 lg:mt-18.75 lg:gap-8 text-center max-w-xl">
         <div class="grid gap-1">
           <strong class="text-xs">100%</strong>
           <span class="text-[11px] text-brand-300">Hecho a medida</span>
         </div>
         <div class="grid gap-1">
           <strong class="text-xs">SEO</strong>
-          <span class="text-[11px] text-brand-300">Posiciona tu sitio en las busquedas</span>
+          <span class="text-[11px] text-brand-300">Posiciona tu sitio</span>
         </div>
         <div class="grid gap-1">
-          <strong class="text-xs">HTTPS</strong>
-          <span class="text-[11px] text-brand-300">seguro y confiable</span>
+          <strong class="text-xs">Hosting</strong>
+          <span class="text-[11px] text-brand-300">Seguro y confiable</span>
+        </div>
+        <div class="grid gap-1">
+          <strong class="text-xs">Rendimiento</strong>
+          <span class="text-[11px] text-brand-300">Velocidad al cargar</span>
         </div>
       </div>
     </div>

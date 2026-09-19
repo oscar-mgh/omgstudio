@@ -6,8 +6,8 @@ const plans = [
     text: 'Perfecta para promocionar un negocio, servicio o marca personal.',
     featured: false,
     features: [
-      'Diseño responsive',
-      'Tema claro - oscuro (paleta de colores personalizada)',
+      'Diseño responsive (adaptable a móviles y tablets)',
+      'Modo claro / oscuro personalizado y paleta de colores',
       'Portada e información principal',
       'Botón de WhatsApp o formulario de contacto',
       'SEO básico, hosting y SSL',
@@ -37,7 +37,9 @@ const plans = [
     class="bg-brand-950 px-6 pt-20 pb-8 lg:pt-26">
     <div class="mx-auto max-w-[1150px]">
       <div class="max-w-[570px]">
-        <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Planes estrategicos para resultados extraordinarios</p>
+        <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">
+          Planes estrategicos para resultados extraordinarios
+        </p>
         <h2 class="mb-5 max-w-[760px] text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
           Elige el punto de partida <em class="font-sans not-italic font-extrabold text-brand-300">ideal para ti.</em>
         </h2>
@@ -70,16 +72,12 @@ const plans = [
             </li>
           </ul>
           <a
-            class="mt-auto inline-flex min-h-[51px] items-center justify-center gap-4 border border-brand-400 px-5 text-sm font-bold transition-colors hover:bg-brand-600"
-            :class="plan.featured ? 'bg-brand-300 text-brand-950 hover:bg-slate-400' : 'text-zinc-300'"
+            class="mt-auto inline-flex min-h-[51px] items-center justify-center gap-4 border border-brand-400 px-5 text-sm font-bold transition-colors bg-brand-300 text-brand-950 hover:bg-sky-200"
             href="#contacto">
             Me interesa
           </a>
         </article>
       </div>
-      <p class="mt-5 text-[12px] text-brand-300">
-        Cada proyecto se define con alcance y objetivos claros. Escríbeme para conocer la mejor solución. <br>No se incluye diseño de logotipos, branding o ilustraciones personalizadas. <br> Se puede integrar logotipo existente e imagenes.
-      </p>
     </div>
   </section>
 </template>

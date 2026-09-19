@@ -36,12 +36,15 @@ const steps = [
           <p class="text-sm leading-relaxed text-slate-100">
             Si necesitas funcionalidades específicas, puedo crear una solución personalizada para tu negocio.
           </p>
+          <p class="mt-5 text-[12px] text-brand-300">
+            Cada proyecto se define con alcance y objetivos claros. Escríbeme para conocer la mejor solución. <br />
+            No se incluye diseño de logotipos, branding o ilustraciones personalizadas (se integra logotipo e imágenes existentes).
+            <br /><br />
+            <strong>Importante:</strong> El precio del proyecto no incluye costo de hosting ni dominio. <br />
+            Se incluye una ronda de ajustes relevantes sin costo adicional tras la entrega. Modificaciones posteriores aplican costo por
+            tipo de cambio (ajustes de texto, visuales menores, nuevas secciones o funcionalidades).
+          </p>
         </div>
-        <a
-          class="inline-flex min-h-[51px] items-center justify-center gap-4 border border-brand-300 px-5 text-sm font-bold text-slate-100 hover:bg-brand-700 sm:col-span-2 lg:col-span-1"
-          href="#contacto"
-          >Platiquemos
-        </a>
       </div>
     </div>
   </section>

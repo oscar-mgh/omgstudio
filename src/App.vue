@@ -1,10 +1,11 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue';
+import AdventagesSection from './components/AdventagesSection.vue';
+import ContactSection from './components/ContactSection.vue';
+import ExtrasSection from './components/ExtrasSection.vue';
 import HeroSection from './components/HeroSection.vue';
 import PlansSection from './components/PlansSection.vue';
-import ExtrasSection from './components/ExtrasSection.vue';
 import ProcessSection from './components/ProcessSection.vue';
-import ContactSection from './components/ContactSection.vue';
 
 const menuOpen = ref(false);
 const scrolled = ref(false);
@@ -32,13 +33,39 @@ onBeforeUnmount(() => {
       class="fixed inset-x-0 top-0 z-40 flex h-16.25 items-center justify-between px-6 transition-colors lg:px-[max(28px,calc((100%-1150px)/2))]"
       :class="{ 'bg-brand-950/95 shadow-[0_1px_0_rgba(129,140,248,.15)] backdrop-blur-xl': scrolled }">
       <a
-        class="flex items-center gap-1 text-[1.05rem] font-extrabold tracking-[-.06em]"
-        href="#inicio"
-        @click.prevent="goTo('#inicio')">
-        <span
-          class="mr-1 inline-flex h-[25px] w-[25px] items-center justify-center bg-slate-100 text-brand-500 font-mono text-[11px] tracking-[-2px]"
-          >&lt;/&gt;</span
-        ><span>impulso<span class="text-brand-300">web</span></span>
+        class="flex items-center gap-2 text-[1.05rem] font-extrabold tracking-[-.06em]"
+        href="#inicio">
+        <svg
+          class="h-9 w-9 text-brand-500"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="OMG Studio Logo">
+          <rect
+            x="2"
+            y="2"
+            width="20"
+            height="20"
+            rx="5"
+            fill="currentColor" />
+
+          <path
+            d="M7.5 9.5L10.5 12L7.5 14.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+
+          <rect
+            x="12.5"
+            y="13.5"
+            width="4.5"
+            height="1.8"
+            rx="0.9"
+            fill="white" />
+        </svg>
+
+        <span> OMG Studio </span>
       </a>
 
       <button
@@ -98,6 +125,7 @@ onBeforeUnmount(() => {
     <HeroSection
       @contact="goTo('#contacto')"
       @plans="goTo('#planes')" />
+    <AdventagesSection />
     <PlansSection />
     <ExtrasSection />
     <ProcessSection />
