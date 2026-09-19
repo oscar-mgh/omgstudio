@@ -10,7 +10,7 @@ const steps = [
 <template>
   <section
     id="proceso"
-    class="bg-brand-950 px-6 py-20 lg:py-28">
+    class="bg-brand-950 px-9 py-20 lg:py-28">
     <div class="mx-auto max-w-[1150px]">
       <div class="mx-auto max-w-[760px] text-center">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Simple y sin complicaciones</p>

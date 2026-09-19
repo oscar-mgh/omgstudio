@@ -43,3 +43,27 @@
     outline-offset: 4px;
   }
 }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition-duration: 1ms;
+  }
+}

@@ -34,7 +34,7 @@ const plans = [
 <template>
   <section
     id="planes"
-    class="bg-brand-950 px-6 pt-20 pb-8 lg:pt-26">
+    class="bg-brand-950 px-9 pt-20 pb-8 lg:pt-26">
     <div class="mx-auto max-w-[1150px]">
       <div class="max-w-[570px]">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">

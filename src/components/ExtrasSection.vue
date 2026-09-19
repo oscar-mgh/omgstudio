@@ -1,7 +1,7 @@
 <template>
   <section
     id="adicionales"
-    class="bg-brand-950 px-6 py-20 text-slate-100 lg:py-28">
+    class="bg-brand-950 px-9 py-20 text-slate-100 lg:py-28">
     <div class="mx-auto grid max-w-[1150px] gap-10 lg:grid-cols-[40%_1fr] lg:gap-[8%]">
       <div class="max-w-[570px]">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Pasa de atraer visitas a cerrar ventas</p>

@@ -60,7 +60,7 @@ const handleSubmit = async () => {
 <template>
   <section
     id="contacto"
-    class="bg-slate-700 px-6 py-20 text-white lg:py-28">
+    class="bg-slate-700 px-9 py-20 text-white lg:py-28">
     <div class="mx-auto grid max-w-[1150px] items-center gap-10 lg:grid-cols-[1fr_.88fr] lg:gap-[10%]">
       <div>
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-slate-100">Hagamos que pase</p>
@@ -72,7 +72,7 @@ const handleSubmit = async () => {
         </p>
         <a
           class="mt-6 inline-flex min-h-12 items-center gap-2 rounded bg-[#25D366] px-[18px] font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#1ebe5d]"
-          href="https://wa.me/5210000000000"
+          href="https://wa.me/527201228939"
           target="_blank"
           rel="noopener">
           <svg

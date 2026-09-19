@@ -5,7 +5,7 @@ defineEmits(['contact', 'plans']);
 <template>
   <section
     id="inicio"
-    class="relative isolate min-h-[720px] bg-brand-800 px-6 pb-20 pt-40 lg:flex lg:items-center lg:px-0 lg:pb-0">
+    class="relative isolate min-h-[720px] bg-brand-800 px-9 pb-20 pt-26 lg:pt-34 lg:flex lg:items-center lg:px-0 lg:pb-0">
     <div class="mx-auto w-full max-w-[760px] lg:mx-0 lg:ml-[max(24px,calc((100%_-_1150px)_/_2))] lg:w-[calc(50%_-_26px)]">
       <p class="mb-[18px] font-bold text-[11px] uppercase tracking-[.09em] text-brand-300">
         <span class="mr-2 inline-block h-2 w-2 rounded-full bg-brand-400"></span>Diseño y desarrollo web personalizado
