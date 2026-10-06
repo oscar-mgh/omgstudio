@@ -1,9 +1,10 @@
 <script setup>
 const steps = [
-  ['01', 'Cuéntame tu idea', 'Hablamos de tu negocio, objetivos y lo que necesita tu proyecto.'],
-  ['02', 'Diseñamos contigo', 'Creo una propuesta visual pensada para tu marca y tus clientes.'],
-  ['03', 'Lo hacemos realidad', 'Desarrollo un sitio rápido, funcional y adaptable a cualquier pantalla.'],
-  ['04', 'Lanzamos', 'Configuramos todo y publicamos tu sitio para que empiece a trabajar por ti.'],
+  ['01', 'Conocemos tu proyecto', 'Hablamos de tu negocio, objetivos, clientes y las funcionalidades que necesitas.'],
+  ['02', 'Definimos la estructura', 'Organizamos el contenido y creamos hasta dos propuestas iniciales de wireframe para elegir la dirección del proyecto.'],
+  ['03', 'Diseñamos', 'Definimos la dirección visual y preparamos el diseño antes de comenzar el desarrollo.'],
+  ['04', 'Desarrollamos', 'Convertimos la propuesta aprobada en un sitio rápido, responsive y funcional.'],
+  ['05', 'Lanzamos', 'Configuramos el dominio, hosting y servicios necesarios para publicar tu proyecto.'],
 ];
 </script>
 
@@ -15,10 +16,10 @@ const steps = [
       <div class="mx-auto max-w-[760px] text-center">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Simple y sin complicaciones</p>
         <h2 class="mb-5 text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
-          De la idea a tu sitio <em class="font-sans not-italic font-extrabold text-brand-300">en cuatro pasos.</em>
+          De la idea a tu sitio <em class="font-sans not-italic font-extrabold text-brand-300">en cinco pasos.</em>
         </h2>
       </div>
-      <div class="my-12 grid gap-8 sm:grid-cols-2 lg:my-16 lg:grid-cols-4">
+      <div class="my-12 grid gap-8 sm:grid-cols-2 lg:my-16 lg:grid-cols-5">
         <article
           v-for="step in steps"
           :key="step[0]"
