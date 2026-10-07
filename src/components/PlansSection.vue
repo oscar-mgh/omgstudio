@@ -18,7 +18,7 @@ const plans = [
     name: 'Sitio Web Profesional',
     audience: 'Para crecer',
     text: 'Para empresas y proyectos que necesitan mostrar más y crecer.',
-    featured: true,
+    featured: false,
     features: [
       'Todo lo del plan Landing',
       'Múltiples páginas',
@@ -26,6 +26,20 @@ const plans = [
       'Formularios personalizados',
       'Conecta con redes sociales o algun CRM (hubspot, zoho, etc)',
       'Preparada para escalar a tienda online o plataforma avanzada',
+    ],
+  },
+  {
+    name: 'Sistema de gestión de citas',
+    audience: 'Para organizar tu atención',
+    text: 'Administra citas y datos de contacto de tus clientes desde un panel sencillo.',
+    featured: true,
+    features: [
+      'Agenda de citas con fechas, horarios y duración',
+      'Estados para cada cita: pendiente, confirmada, completada o cancelada',
+      'Panel administrativo para consultar y gestionar citas',
+      'Registro de clientes con datos de contacto y notas',
+      'Búsqueda de citas y clientes',
+      'Exportación de calendario en formato .ics',
     ],
   },
 ];
@@ -44,10 +58,10 @@ const plans = [
           Elige el punto de partida <em class="font-sans not-italic font-extrabold text-brand-300">ideal para ti.</em>
         </h2>
         <p class="text-base leading-[1.8] text-brand-300">
-          Sin plantillas genéricas. Cada sitio se diseña para comunicar, conectar y convertir.
+          Soluciones digitales diseñadas para comunicar, conectar y organizar tu negocio.
         </p>
       </div>
-      <div class="mt-12 grid gap-6 lg:grid-cols-2">
+      <div class="mt-12 grid gap-6 lg:grid-cols-3">
         <article
           v-for="plan in plans"
           :key="plan.name"
@@ -71,11 +85,6 @@ const plans = [
               <span class="font-extrabold text-brand-300">✓</span>{{ feature }}
             </li>
           </ul>
-          <a
-            class="mt-auto inline-flex min-h-[51px] items-center justify-center gap-4 border border-brand-400 px-5 text-sm font-bold transition-colors bg-brand-300 text-brand-950 hover:bg-sky-200"
-            href="#contacto">
-            Me interesa
-          </a>
         </article>
       </div>
     </div>
