@@ -18,7 +18,7 @@ const plans = [
     name: 'Sitio Web Profesional',
     audience: 'Para crecer',
     text: 'Para empresas y proyectos que necesitan mostrar más y crecer.',
-    featured: false,
+    featured: true,
     features: [
       'Todo lo del plan Landing',
       'Múltiples páginas',
@@ -26,20 +26,6 @@ const plans = [
       'Formularios personalizados',
       'Conecta con redes sociales o algun CRM (hubspot, zoho, etc)',
       'Preparada para escalar a tienda online o plataforma avanzada',
-    ],
-  },
-  {
-    name: 'Sistema de gestión de citas',
-    audience: 'Para organizar tu atención',
-    text: 'Administra citas y datos de contacto de tus clientes desde un panel sencillo.',
-    featured: true,
-    features: [
-      'Agenda de citas con fechas, horarios y duración',
-      'Estados para cada cita: pendiente, confirmada, completada o cancelada',
-      'Panel administrativo para consultar y gestionar citas',
-      'Registro de clientes con datos de contacto y notas',
-      'Búsqueda de citas y clientes',
-      'Exportación de calendario en formato .ics',
     ],
   },
 ];
@@ -61,7 +47,7 @@ const plans = [
           Soluciones digitales diseñadas para comunicar, conectar y organizar tu negocio.
         </p>
       </div>
-      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+      <div class="mt-12 grid gap-6 lg:grid-cols-2">
         <article
           v-for="plan in plans"
           :key="plan.name"
