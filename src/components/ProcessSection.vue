@@ -1,7 +1,11 @@
 <script setup>
 const steps = [
   ['01', 'Conocemos tu proyecto', 'Hablamos de tu negocio, objetivos, clientes y las funcionalidades que necesitas.'],
-  ['02', 'Definimos la estructura', 'Organizamos el contenido y creamos hasta dos propuestas iniciales de wireframe para elegir la dirección del proyecto.'],
+  [
+    '02',
+    'Definimos la estructura',
+    'Organizamos el contenido y creamos hasta dos propuestas iniciales de wireframe para elegir la dirección del proyecto.',
+  ],
   ['03', 'Diseñamos', 'Definimos la dirección visual y preparamos el diseño antes de comenzar el desarrollo.'],
   ['04', 'Desarrollamos', 'Convertimos la propuesta aprobada en un sitio rápido, responsive y funcional.'],
   ['05', 'Lanzamos', 'Configuramos el dominio, hosting y servicios necesarios para publicar tu proyecto.'],
@@ -37,14 +41,20 @@ const steps = [
           <p class="text-sm leading-relaxed text-slate-100">
             Si necesitas funcionalidades específicas, puedo crear una solución personalizada para tu negocio.
           </p>
-          <p class="mt-5 text-[12px] text-brand-300">
-            Cada proyecto se define con alcance y objetivos claros. Escríbeme para conocer la mejor solución. <br />
-            No se incluye diseño de logotipos, branding o ilustraciones personalizadas (se integra logotipo e imágenes existentes).
-            <br /><br />
-            <strong>Importante:</strong> El precio del proyecto no incluye costo de hosting ni dominio. <br />
-            Se incluye una ronda de ajustes relevantes sin costo adicional tras la entrega. Modificaciones posteriores aplican costo por
-            tipo de cambio (ajustes de texto, visuales menores, nuevas secciones o funcionalidades).
-          </p>
+          <div class="mt-6 text-[12px] text-brand-300 leading-relaxed space-y-2">
+            <p>
+              ✨ <strong>Transparencia desde el día uno:</strong> Cada proyecto se cotiza con alcance y objetivos claros. Escríbeme y
+              diseñemos la solución ideal para tu negocio.
+            </p>
+            <p class="opacity-90">
+              • <strong>Materiales:</strong> Trabajamos con tu logotipo e imágenes existentes (no incluye diseño de identidad visual o
+              ilustraciones desde cero).<br />
+              • <strong>Dominio y Hosting:</strong> No van incluidos en el desarrollo base, pero al contratar nuestro
+              <strong>plan de mantenimiento</strong> te olvidas de ello: incluye hosting, dominio y soporte continuo.<br />
+              • <strong>Garantía:</strong> Incluye 1 ronda de cambios tras la entrega. Cambios o secciones adicionales posteriores se
+              cotizan de forma independiente.
+            </p>
+          </div>
         </div>
       </div>
     </div>
