@@ -9,9 +9,12 @@ import ProcessSection from './components/ProcessSection.vue';
 
 const menuOpen = ref(false);
 const scrolled = ref(false);
+let revealObserver;
+
 function goTo(id) {
   menuOpen.value = false;
-  document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelector(id)?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
 }
 
 function updateScroll() {
@@ -20,10 +23,30 @@ function updateScroll() {
 
 onMounted(() => {
   window.addEventListener('scroll', updateScroll, { passive: true });
+
+  const revealElements = document.querySelectorAll('.reveal');
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    revealElements.forEach((element) => element.classList.add('is-visible'));
+    return;
+  }
+
+  revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -32px 0px' },
+  );
+  revealElements.forEach((element) => revealObserver.observe(element));
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', updateScroll);
+  revealObserver?.disconnect();
 });
 </script>
 
@@ -69,7 +92,7 @@ onBeforeUnmount(() => {
       </a>
 
       <button
-        class="relative z-50 flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded border border-brand-600 bg-brand-700 lg:hidden"
+        class="relative z-50 flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded border border-brand-600 bg-brand-700 transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-lg lg:hidden"
         type="button"
         :aria-expanded="menuOpen"
         :aria-label="menuOpen ? 'Cerrar menú' : 'Abrir menú'"
@@ -115,12 +138,14 @@ onBeforeUnmount(() => {
         >
       </nav>
     </header>
-    <button
-      v-if="menuOpen"
-      class="fixed inset-0 z-30 bg-brand-950/60 backdrop-blur-[2px] lg:hidden"
-      type="button"
-      aria-label="Cerrar menú"
-      @click="menuOpen = false"></button>
+    <Transition name="fade">
+      <button
+        v-if="menuOpen"
+        class="fixed inset-0 z-30 bg-brand-950/60 backdrop-blur-[2px] lg:hidden"
+        type="button"
+        aria-label="Cerrar menú"
+        @click="menuOpen = false"></button>
+    </Transition>
 
     <HeroSection
       @contact="goTo('#contacto')"

@@ -62,7 +62,7 @@ const handleSubmit = async () => {
     id="contacto"
     class="bg-slate-700 px-9 py-20 text-white lg:py-28">
     <div class="mx-auto grid max-w-[1150px] items-center gap-10 lg:grid-cols-[1fr_.88fr] lg:gap-[10%]">
-      <div>
+      <div class="reveal">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-slate-100">Hagamos que pase</p>
         <h2 class="mb-5 text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
           ¿Listo para que tu negocio <em class="font-sans not-italic font-extrabold text-slate-100">se vea increíble?</em>
@@ -71,7 +71,7 @@ const handleSubmit = async () => {
           Cuéntame qué tienes en mente. Te responderé para conocer tu proyecto y proponerte el mejor camino.
         </p>
         <a
-          class="mt-6 inline-flex min-h-12 items-center gap-2 rounded bg-[#25D366] px-[18px] font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#1ebe5d]"
+          class="mt-6 inline-flex min-h-12 items-center gap-2 rounded bg-[#25D366] px-[18px] font-bold text-white shadow-lg transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-xl"
           href="https://wa.me/527201228939"
           target="_blank"
           rel="noopener">
@@ -88,7 +88,7 @@ const handleSubmit = async () => {
       </div>
 
       <form
-        class="bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] sm:p-8"
+        class="reveal bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] sm:p-8"
         @submit.prevent="handleSubmit">
         <Transition
           name="fade"
@@ -103,7 +103,7 @@ const handleSubmit = async () => {
               Gracias por escribirme. Me pondré en contacto contigo pronto.
             </p>
             <button
-              class="min-h-11 border border-brand-400 px-5 text-sm font-bold hover:bg-brand-600"
+              class="min-h-11 border border-brand-400 px-5 text-sm font-bold transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-600"
               type="button"
               @click="resetForm">
               Enviar otro mensaje
@@ -158,7 +158,7 @@ const handleSubmit = async () => {
             </p>
 
             <button
-              class="mt-2 inline-flex min-h-[51px] items-center justify-center gap-4 bg-brand-300 px-5 text-sm font-bold text-brand-950 transition hover:bg-slate-200 disabled:opacity-50 cursor-pointer"
+              class="mt-2 inline-flex min-h-[51px] items-center justify-center gap-4 bg-brand-300 px-5 text-sm font-bold text-brand-950 transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-200 hover:shadow-lg disabled:opacity-50 cursor-pointer"
               type="submit"
               :disabled="isSubmitting">
               {{ isSubmitting ? 'Enviando...' : 'Enviar mensaje' }}

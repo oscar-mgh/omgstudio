@@ -3,15 +3,15 @@
     id="adicionales"
     class="bg-brand-950 px-9 py-20 text-slate-100 lg:py-28">
     <div class="mx-auto grid max-w-[1150px] gap-10 lg:grid-cols-[40%_1fr] lg:gap-[8%]">
-      <div class="max-w-[570px]">
+      <div class="reveal max-w-[570px]">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Pasa de atraer visitas a cerrar ventas</p>
         <h2 class="mb-5 text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
           Funciones para llevar tu negocio <em class="font-sans not-italic font-extrabold text-brand-300">al siguiente nivel.</em>
         </h2>
         <p class="text-base leading-[1.8] text-brand-300">Integra lo que necesitas hoy y construye una base lista para el futuro.</p>
       </div>
-      <div class="grid gap-4">
-        <article class="grid gap-4 border border-brand-600/70 p-5 sm:grid-cols-[52px_1fr] sm:gap-5">
+      <div class="reveal grid gap-4">
+        <article class="grid gap-4 border border-brand-600/70 p-5 transition duration-200 ease-out hover:-translate-y-1 hover:border-brand-300 sm:grid-cols-[52px_1fr] sm:gap-5">
           <div class="grid h-12 w-12 place-items-center bg-brand-300 text-xl font-bold text-brand-950">$</div>
           <div>
             <div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
@@ -25,7 +25,7 @@
             </ul>
           </div>
         </article>
-        <article class="grid gap-4 border border-brand-600/70 p-5 sm:grid-cols-[52px_1fr] sm:gap-5">
+        <article class="grid gap-4 border border-brand-600/70 p-5 transition duration-200 ease-out hover:-translate-y-1 hover:border-brand-300 sm:grid-cols-[52px_1fr] sm:gap-5">
           <div class="grid h-12 w-12 place-items-center bg-brand-300 text-xl font-bold text-brand-950">◉</div>
           <div>
             <div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">

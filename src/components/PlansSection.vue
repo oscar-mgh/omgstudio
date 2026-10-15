@@ -36,7 +36,7 @@ const plans = [
     id="planes"
     class="bg-brand-950 px-9 pt-20 pb-8 lg:py-26 border-b border-brand-800">
     <div class="mx-auto max-w-[1150px]">
-      <div class="max-w-[570px]">
+      <div class="reveal max-w-[570px]">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">
           Planes estrategicos para resultados extraordinarios
         </p>
@@ -51,7 +51,7 @@ const plans = [
         <article
           v-for="plan in plans"
           :key="plan.name"
-          class="relative flex min-h-0 flex-col border border-brand-600 bg-brand-700 p-6 transition-transform hover:-translate-y-1 lg:min-h-[580px] lg:p-9"
+          class="reveal relative flex min-h-0 flex-col border border-brand-600 bg-brand-700 p-6 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(3,5,20,.28)] lg:min-h-[580px] lg:p-9"
           :class="plan.featured ? 'border-2 border-brand-300' : ''">
           <p
             v-if="plan.featured"

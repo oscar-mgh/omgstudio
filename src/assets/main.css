@@ -47,19 +47,44 @@
 .fade-enter-active,
 .fade-leave-active {
   transition:
-    opacity 220ms ease,
-    transform 220ms ease;
+    opacity 220ms ease-out,
+    transform 220ms ease-out;
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-  transform: translateY(8px);
+  transform: scale(0.95);
+}
+
+.reveal {
+  transition:
+    opacity 240ms ease-out,
+    transform 240ms ease-out;
+}
+
+html.motion-ready .reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(12px);
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  html.motion-ready .reveal:not(.is-visible) {
+    opacity: 1;
+    transform: none;
   }
 
   .fade-enter-active,

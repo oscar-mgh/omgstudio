@@ -17,7 +17,7 @@ const steps = [
     id="proceso"
     class="bg-brand-950 px-9 py-20 lg:py-28">
     <div class="mx-auto max-w-[1150px]">
-      <div class="mx-auto max-w-[760px] text-center">
+      <div class="reveal mx-auto max-w-[760px] text-center">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Simple y sin complicaciones</p>
         <h2 class="mb-5 text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
           De la idea a tu sitio <em class="font-sans not-italic font-extrabold text-brand-300">en cinco pasos.</em>
@@ -27,13 +27,13 @@ const steps = [
         <article
           v-for="step in steps"
           :key="step[0]"
-          class="border-t border-brand-400 pt-4">
+          class="reveal border-t border-brand-400 pt-4 transition duration-200 ease-out hover:-translate-y-1">
           <span class="font-mono text-xs text-brand-300">{{ step[0] }}</span>
           <h3 class="my-6 text-base font-bold">{{ step[1] }}</h3>
           <p class="text-sm leading-relaxed text-brand-300">{{ step[2] }}</p>
         </article>
       </div>
-      <div class="grid gap-6 bg-brand-800 p-6 sm:grid-cols-[58px_1fr] sm:items-center lg:grid-cols-[70px_1fr_auto] lg:p-8">
+      <div class="reveal grid gap-6 bg-brand-800 p-6 sm:grid-cols-[58px_1fr] sm:items-center lg:grid-cols-[70px_1fr_auto] lg:p-8">
         <div class="grid h-14 w-14 place-items-center bg-brand-300 text-2xl text-brand-950">✦</div>
         <div>
           <p class="mb-1 font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Tu proyecto es único</p>

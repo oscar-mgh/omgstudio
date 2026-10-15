@@ -24,7 +24,7 @@ const ventajas = [
     id="desarrollo-a-medida"
     class="bg-brand-950 px-9 pt-20 pb-12 lg:py-26 text-white border-b border-brand-800">
     <div class="mx-auto max-w-[1150px]">
-      <div class="max-w-[680px]">
+      <div class="reveal max-w-[680px]">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">
           Código a medida vs. Plantillas tradicionales
         </p>
@@ -41,7 +41,7 @@ const ventajas = [
         <article
           v-for="(item, index) in ventajas"
           :key="index"
-          class="flex flex-col border border-brand-600 bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] transition-transform hover:-translate-y-1">
+          class="reveal flex flex-col border border-brand-600 bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] transition duration-200 ease-out hover:-translate-y-1 hover:shadow-[9px_13px_0_#080a1a]">
           <span class="mb-4 font-mono text-xs font-bold text-brand-300"> 0{{ index + 1 }} </span>
 
           <h3 class="mb-3 text-lg font-bold leading-snug text-slate-100">

@@ -6,7 +6,7 @@ defineEmits(['contact', 'plans']);
   <section
     id="inicio"
     class="relative isolate min-h-[720px] bg-brand-800 px-9 pb-20 pt-26 lg:pt-34 lg:flex lg:items-center lg:px-0 lg:pb-0">
-    <div class="mx-auto w-full max-w-[760px] lg:mx-0 lg:ml-[max(24px,calc((100%_-_1150px)_/_2))] lg:w-[calc(50%_-_26px)]">
+    <div class="reveal mx-auto w-full max-w-[760px] lg:mx-0 lg:ml-[max(24px,calc((100%_-_1150px)_/_2))] lg:w-[calc(50%_-_26px)]">
       <p class="mb-[18px] font-bold text-[11px] uppercase tracking-[.09em] text-brand-300">
         <span class="mr-2 inline-block h-2 w-2 rounded-full bg-brand-400"></span>Diseño y desarrollo web personalizado
       </p>
@@ -18,7 +18,7 @@ defineEmits(['contact', 'plans']);
       </p>
       <div class="mt-8 flex flex-wrap items-center gap-5 lg:gap-7">
         <button
-          class="inline-flex min-h-[51px] items-center justify-center gap-4 bg-brand-300 px-[21px] text-sm font-bold text-brand-950 transition-transform rounded cursor-pointer hover:-translate-y-1"
+          class="inline-flex min-h-[51px] items-center justify-center gap-4 rounded bg-brand-300 px-[21px] text-sm font-bold text-brand-950 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg cursor-pointer"
           @click="$emit('contact')">
           Quiero mi sitio web
         </button>
@@ -43,7 +43,7 @@ defineEmits(['contact', 'plans']);
       </div>
     </div>
     <div
-      class="relative mx-auto mt-12 h-[clamp(250px,42vw,455px)] w-[min(100%-32px,610px)] lg:absolute lg:right-[clamp(15px,5vw,100px)] lg:top-[153px] lg:mt-0"
+      class="reveal relative mx-auto mt-12 h-[clamp(250px,42vw,455px)] w-[min(100%-32px,610px)] lg:absolute lg:right-[clamp(15px,5vw,100px)] lg:top-[153px] lg:mt-0"
       aria-hidden="true">
       <div
         class="absolute right-0 top-6 h-[calc(100%-26px)] w-[93%] rotate-2 overflow-hidden rounded-lg border-[7px] border-brand-500 bg-brand-800 rounded p-0 shadow-[0_35px_58px_rgba(3,5,20,.42)]">
