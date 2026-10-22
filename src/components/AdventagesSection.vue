@@ -41,7 +41,7 @@ const ventajas = [
         <article
           v-for="(item, index) in ventajas"
           :key="index"
-          class="reveal flex flex-col border border-brand-600 bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] transition duration-200 ease-out hover:-translate-y-1 hover:shadow-[9px_13px_0_#080a1a]">
+          class="reveal flex flex-col rounded border border-brand-600 bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] transition duration-200 ease-out hover:-translate-y-1 hover:shadow-[9px_13px_0_#080a1a]">
           <span class="mb-4 font-mono text-xs font-bold text-brand-300"> 0{{ index + 1 }} </span>
 
           <h3 class="mb-3 text-lg font-bold leading-snug text-slate-100">
@@ -54,7 +54,7 @@ const ventajas = [
         </article>
       </div>
       <div
-        class="mt-10 flex flex-wrap items-center justify-between gap-4 border-l-2 border-brand-300 bg-brand-900/50 p-4 text-xs text-brand-300 font-mono">
+        class="mt-10 flex flex-wrap items-center justify-between gap-4 rounded border-l-2 border-brand-300 bg-brand-900/50 p-4 text-xs text-brand-300 font-mono">
         <p>⚡ Optimización SEO nativa y estructura adaptada a estándares modernos de Google.</p>
         <a
           href="#contacto"

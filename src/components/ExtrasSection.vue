@@ -1,7 +1,7 @@
 <template>
   <section
     id="adicionales"
-    class="bg-brand-950 px-9 py-20 text-slate-100 lg:py-28">
+    class="bg-brand-950 px-9 py-20 text-slate-100 lg:py-28 border-b border-brand-800">
     <div class="mx-auto grid max-w-[1150px] gap-10 lg:grid-cols-[40%_1fr] lg:gap-[8%]">
       <div class="reveal max-w-[570px]">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Pasa de atraer visitas a cerrar ventas</p>
@@ -11,8 +11,8 @@
         <p class="text-base leading-[1.8] text-brand-300">Integra lo que necesitas hoy y construye una base lista para el futuro.</p>
       </div>
       <div class="reveal grid gap-4">
-        <article class="grid gap-4 border border-brand-600/70 p-5 transition duration-200 ease-out hover:-translate-y-1 hover:border-brand-300 sm:grid-cols-[52px_1fr] sm:gap-5">
-          <div class="grid h-12 w-12 place-items-center bg-brand-300 text-xl font-bold text-brand-950">$</div>
+        <article class="grid gap-4 rounded border border-brand-600/70 p-5 transition duration-200 ease-out hover:-translate-y-1 hover:border-brand-300 sm:grid-cols-[52px_1fr] sm:gap-5">
+          <div class="grid h-12 w-12 place-items-center rounded bg-brand-300 text-xl font-bold text-brand-950">$</div>
           <div>
             <div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
               <h3 class="text-base font-bold">Pasarela de pago</h3>
@@ -25,8 +25,8 @@
             </ul>
           </div>
         </article>
-        <article class="grid gap-4 border border-brand-600/70 p-5 transition duration-200 ease-out hover:-translate-y-1 hover:border-brand-300 sm:grid-cols-[52px_1fr] sm:gap-5">
-          <div class="grid h-12 w-12 place-items-center bg-brand-300 text-xl font-bold text-brand-950">◉</div>
+        <article class="grid gap-4 rounded border border-brand-600/70 p-5 transition duration-200 ease-out hover:-translate-y-1 hover:border-brand-300 sm:grid-cols-[52px_1fr] sm:gap-5">
+          <div class="grid h-12 w-12 place-items-center rounded bg-brand-300 text-xl font-bold text-brand-950">◉</div>
           <div>
             <div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
               <h3 class="text-base font-bold">Sistema de usuarios</h3>

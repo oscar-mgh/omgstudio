@@ -98,13 +98,13 @@ onBeforeUnmount(() => {
         :aria-label="menuOpen ? 'Cerrar menú' : 'Abrir menú'"
         @click="menuOpen = !menuOpen">
         <span
-          class="h-0.5 w-5 rounded-full bg-slate-100 transition-transform"
+          class="h-0.5 w-5 rounded bg-slate-100 transition-transform"
           :class="{ 'translate-y-[7px] rotate-45': menuOpen }"></span
         ><span
-          class="h-0.5 w-5 rounded-full bg-slate-100 transition-opacity"
+          class="h-0.5 w-5 rounded bg-slate-100 transition-opacity"
           :class="{ 'opacity-0': menuOpen }"></span
         ><span
-          class="h-0.5 w-5 rounded-full bg-slate-100 transition-transform"
+          class="h-0.5 w-5 rounded bg-slate-100 transition-transform"
           :class="{ '-translate-y-[7px] -rotate-45': menuOpen }"></span>
       </button>
 

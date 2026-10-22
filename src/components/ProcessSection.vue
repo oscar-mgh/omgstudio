@@ -33,8 +33,8 @@ const steps = [
           <p class="text-sm leading-relaxed text-brand-300">{{ step[2] }}</p>
         </article>
       </div>
-      <div class="reveal grid gap-6 bg-brand-800 p-6 sm:grid-cols-[58px_1fr] sm:items-center lg:grid-cols-[70px_1fr_auto] lg:p-8">
-        <div class="grid h-14 w-14 place-items-center bg-brand-300 text-2xl text-brand-950">✦</div>
+      <div class="reveal grid gap-6 rounded bg-brand-800 p-6 sm:grid-cols-[58px_1fr] sm:items-center lg:grid-cols-[70px_1fr_auto] lg:p-8">
+        <div class="grid h-14 w-14 place-items-center rounded bg-brand-300 text-2xl text-brand-950">✦</div>
         <div>
           <p class="mb-1 font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Tu proyecto es único</p>
           <h3 class="mb-2 text-lg font-bold">Todos los sitios son desarrollados a medida.</h3>

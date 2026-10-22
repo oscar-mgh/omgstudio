@@ -51,11 +51,11 @@ const plans = [
         <article
           v-for="plan in plans"
           :key="plan.name"
-          class="reveal relative flex min-h-0 flex-col border border-brand-600 bg-brand-700 p-6 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(3,5,20,.28)] lg:min-h-[580px] lg:p-9"
+          class="reveal relative flex min-h-0 flex-col rounded border border-brand-600 bg-brand-700 p-6 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(3,5,20,.28)] lg:min-h-[580px] lg:p-9"
           :class="plan.featured ? 'border-2 border-brand-300' : ''">
           <p
             v-if="plan.featured"
-            class="absolute -top-3 right-6 bg-brand-300 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-brand-950">
+            class="absolute -top-3 right-6 rounded bg-brand-300 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-brand-950">
             Recomendado
           </p>
           <p class="font-mono text-[11px] uppercase tracking-wider text-brand-300">{{ plan.name }}</p>

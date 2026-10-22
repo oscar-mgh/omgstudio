@@ -8,7 +8,7 @@ defineEmits(['contact', 'plans']);
     class="relative isolate min-h-[720px] bg-brand-800 px-9 pb-20 pt-26 lg:pt-34 lg:flex lg:items-center lg:px-0 lg:pb-0">
     <div class="reveal mx-auto w-full max-w-[760px] lg:mx-0 lg:ml-[max(24px,calc((100%_-_1150px)_/_2))] lg:w-[calc(50%_-_26px)]">
       <p class="mb-[18px] font-bold text-[11px] uppercase tracking-[.09em] text-brand-300">
-        <span class="mr-2 inline-block h-2 w-2 rounded-full bg-brand-400"></span>Diseño y desarrollo web personalizado
+        <span class="mr-2 inline-block h-2 w-2 rounded bg-brand-400"></span>Diseño y desarrollo web personalizado
       </p>
       <h1 class="mb-6 max-w-[670px] text-[clamp(2.35rem,5.2vw,5.25rem)] font-bold leading-[1.05] tracking-[-.055em]">
         Tu negocio merece una web que <em class="font-sans not-italic font-extrabold text-brand-300">genere resultados.</em>
@@ -46,10 +46,10 @@ defineEmits(['contact', 'plans']);
       class="reveal relative mx-auto mt-12 h-[clamp(250px,42vw,455px)] w-[min(100%-32px,610px)] lg:absolute lg:right-[clamp(15px,5vw,100px)] lg:top-[153px] lg:mt-0"
       aria-hidden="true">
       <div
-        class="absolute right-0 top-6 h-[calc(100%-26px)] w-[93%] rotate-2 overflow-hidden rounded-lg border-[7px] border-brand-500 bg-brand-800 rounded p-0 shadow-[0_35px_58px_rgba(3,5,20,.42)]">
+        class="absolute right-0 top-6 h-[calc(100%-26px)] w-[93%] rotate-2 overflow-hidden rounded border-[7px] border-brand-500 bg-brand-800 p-0 shadow-[0_35px_58px_rgba(3,5,20,.42)]">
         <div class="flex h-[42px] items-center gap-1 px-1">
-          <i class="h-2 w-2 rounded-full bg-brand-400"></i><i class="h-2 w-2 rounded-full bg-brand-400"></i
-          ><i class="h-2 w-2 rounded-full bg-brand-400"></i><span class="mx-auto h-[13px] w-[45%] rounded-full bg-brand-700"></span>
+          <i class="h-2 w-2 rounded bg-brand-400"></i><i class="h-2 w-2 rounded bg-brand-400"></i
+          ><i class="h-2 w-2 rounded bg-brand-400"></i><span class="mx-auto h-[13px] w-[45%] rounded bg-brand-700"></span>
         </div>
         <div class="h-[calc(100%-42px)] bg-brand-900 p-[clamp(14px,3vw,30px)]">
           <div class="ml-auto h-2 w-[38%] bg-brand-400/70"></div>

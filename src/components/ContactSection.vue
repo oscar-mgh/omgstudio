@@ -88,7 +88,7 @@ const handleSubmit = async () => {
       </div>
 
       <form
-        class="reveal bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] sm:p-8"
+        class="reveal rounded bg-brand-700 p-6 shadow-[9px_9px_0_#080a1a] sm:p-8"
         @submit.prevent="handleSubmit">
         <Transition
           name="fade"
@@ -97,13 +97,13 @@ const handleSubmit = async () => {
             v-if="sent"
             key="success"
             class="grid min-h-[304px] place-content-center text-center">
-            <span class="mx-auto mb-4 grid h-11 w-11 place-items-center rounded-full bg-brand-300 text-brand-950">✓</span>
+            <span class="mx-auto mb-4 grid h-11 w-11 place-items-center rounded bg-brand-300 text-brand-950">✓</span>
             <h3 class="mb-2 text-xl font-bold">¡Mensaje listo!</h3>
             <p class="mx-auto mb-5 max-w-[255px] text-sm leading-relaxed text-brand-300">
               Gracias por escribirme. Me pondré en contacto contigo pronto.
             </p>
             <button
-              class="min-h-11 border border-brand-400 px-5 text-sm font-bold transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-600"
+              class="min-h-11 rounded border border-brand-400 px-5 text-sm font-bold transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-600"
               type="button"
               @click="resetForm">
               Enviar otro mensaje
@@ -125,7 +125,7 @@ const handleSubmit = async () => {
               Nombre
               <input
                 v-model="formData.name"
-                class="border-0 border-b border-brand-600 bg-transparent py-2 text-sm text-slate-100 outline-none placeholder:text-brand-400 focus:border-brand-300"
+                class="rounded border-0 border-b border-brand-600 bg-transparent py-2 text-sm text-slate-100 outline-none placeholder:text-brand-400 focus:border-brand-300"
                 required
                 type="text"
                 placeholder="¿Cómo te llamas?" />
@@ -135,7 +135,7 @@ const handleSubmit = async () => {
               Correo electrónico
               <input
                 v-model="formData.email"
-                class="border-0 border-b border-brand-600 bg-transparent py-2 text-sm text-slate-100 outline-none placeholder:text-brand-400 focus:border-brand-300"
+                class="rounded border-0 border-b border-brand-600 bg-transparent py-2 text-sm text-slate-100 outline-none placeholder:text-brand-400 focus:border-brand-300"
                 required
                 type="email"
                 placeholder="tu@correo.com" />
@@ -145,7 +145,7 @@ const handleSubmit = async () => {
               Cuéntame sobre tu proyecto
               <textarea
                 v-model="formData.message"
-                class="resize-y border-0 border-b border-brand-600 bg-transparent py-2 text-sm text-slate-100 outline-none placeholder:text-brand-400 focus:border-brand-300"
+                class="resize-y rounded border-0 border-b border-brand-600 bg-transparent py-2 text-sm text-slate-100 outline-none placeholder:text-brand-400 focus:border-brand-300"
                 required
                 rows="3"
                 placeholder="¿Qué necesitas crear?"></textarea>
@@ -158,7 +158,7 @@ const handleSubmit = async () => {
             </p>
 
             <button
-              class="mt-2 inline-flex min-h-[51px] items-center justify-center gap-4 bg-brand-300 px-5 text-sm font-bold text-brand-950 transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-200 hover:shadow-lg disabled:opacity-50 cursor-pointer"
+              class="mt-2 inline-flex min-h-[51px] items-center justify-center gap-4 rounded bg-brand-300 px-5 text-sm font-bold text-brand-950 transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-200 hover:shadow-lg disabled:opacity-50 cursor-pointer"
               type="submit"
               :disabled="isSubmitting">
               {{ isSubmitting ? 'Enviando...' : 'Enviar mensaje' }}
