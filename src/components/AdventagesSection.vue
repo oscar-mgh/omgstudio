@@ -24,7 +24,7 @@ const ventajas = [
     id="desarrollo-a-medida"
     class="bg-brand-950 px-9 pt-20 pb-12 lg:py-26 text-white border-b border-brand-800">
     <div class="mx-auto max-w-[1150px]">
-      <div class="reveal max-w-[680px]">
+      <div class="reveal mx-auto max-w-[680px] text-center sm:mx-0 sm:text-left">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">
           Código a medida vs. Plantillas tradicionales
         </p>

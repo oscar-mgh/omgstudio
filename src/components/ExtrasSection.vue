@@ -3,7 +3,7 @@
     id="adicionales"
     class="bg-brand-950 px-9 py-20 text-slate-100 lg:py-28 border-b border-brand-800">
     <div class="mx-auto grid max-w-[1150px] gap-10 lg:grid-cols-[40%_1fr] lg:gap-[8%]">
-      <div class="reveal max-w-[570px]">
+      <div class="reveal mx-auto max-w-[570px] text-center sm:mx-0 sm:text-left">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">Pasa de atraer visitas a cerrar ventas</p>
         <h2 class="mb-5 text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
           Funciones para llevar tu negocio <em class="font-sans not-italic font-extrabold text-brand-300">al siguiente nivel.</em>

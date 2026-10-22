@@ -62,12 +62,12 @@ const handleSubmit = async () => {
     id="contacto"
     class="bg-slate-700 px-9 py-20 text-white lg:py-28">
     <div class="mx-auto grid max-w-[1150px] items-center gap-10 lg:grid-cols-[1fr_.88fr] lg:gap-[10%]">
-      <div class="reveal">
+      <div class="reveal text-center sm:text-left">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-slate-100">Hagamos que pase</p>
         <h2 class="mb-5 text-[clamp(2rem,3.7vw,3.8rem)] font-bold leading-tight tracking-[-.055em]">
           ¿Listo para que tu negocio <em class="font-sans not-italic font-extrabold text-slate-100">se vea increíble?</em>
         </h2>
-        <p class="max-w-[470px] leading-7 text-slate-100">
+        <p class="mx-auto max-w-[470px] leading-7 text-slate-100 sm:mx-0">
           Cuéntame qué tienes en mente. Te responderé para conocer tu proyecto y proponerte el mejor camino.
         </p>
         <a

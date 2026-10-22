@@ -36,7 +36,7 @@ const plans = [
     id="planes"
     class="bg-brand-950 px-9 pt-20 pb-8 lg:py-26 border-b border-brand-800">
     <div class="mx-auto max-w-[1150px]">
-      <div class="reveal max-w-[570px]">
+      <div class="reveal mx-auto max-w-[570px] text-center sm:mx-0 sm:text-left">
         <p class="mb-[18px] font-mono text-[11px] uppercase tracking-[.09em] text-brand-300">
           Planes estrategicos para resultados extraordinarios
         </p>

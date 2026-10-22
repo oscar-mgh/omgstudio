@@ -6,17 +6,17 @@ defineEmits(['contact', 'plans']);
   <section
     id="inicio"
     class="relative isolate min-h-[720px] bg-brand-800 px-9 pb-20 pt-26 lg:pt-34 lg:flex lg:items-center lg:px-0 lg:pb-0">
-    <div class="reveal mx-auto w-full max-w-[760px] lg:mx-0 lg:ml-[max(24px,calc((100%_-_1150px)_/_2))] lg:w-[calc(50%_-_26px)]">
+    <div class="reveal mx-auto w-full max-w-[760px] text-center sm:text-left lg:mx-0 lg:ml-[max(24px,calc((100%_-_1150px)_/_2))] lg:w-[calc(50%_-_26px)]">
       <p class="mb-[18px] font-bold text-[11px] uppercase tracking-[.09em] text-brand-300">
         <span class="mr-2 inline-block h-2 w-2 rounded bg-brand-400"></span>Diseño y desarrollo web personalizado
       </p>
-      <h1 class="mb-6 max-w-[670px] text-[clamp(2.35rem,5.2vw,5.25rem)] font-bold leading-[1.05] tracking-[-.055em]">
+      <h1 class="mx-auto mb-6 max-w-[670px] text-[clamp(2.35rem,5.2vw,5.25rem)] font-bold leading-[1.05] tracking-[-.055em] sm:mx-0">
         Tu negocio merece una web que <em class="font-sans not-italic font-extrabold text-brand-300">genere resultados.</em>
       </h1>
-      <p class="max-w-[530px] text-[1.08rem] leading-[1.75] text-brand-300">
+      <p class="mx-auto max-w-[530px] text-[1.08rem] leading-[1.75] text-brand-300 sm:mx-0">
         Convierte visitas en clientes con un sitio rápido, atractivo y hecho a la medida de lo que tu negocio necesita.
       </p>
-      <div class="mt-8 flex flex-wrap items-center gap-5 lg:gap-7">
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-5 sm:justify-start lg:gap-7">
         <button
           class="inline-flex min-h-[51px] items-center justify-center gap-4 rounded bg-brand-300 px-[21px] text-sm font-bold text-brand-950 transition duration-200 ease-out hover:-translate-y-1 hover:shadow-lg cursor-pointer"
           @click="$emit('contact')">
