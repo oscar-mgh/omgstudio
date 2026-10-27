@@ -49,8 +49,7 @@ const steps = [
             <p class="opacity-90">
               • <strong>Materiales:</strong> Trabajamos con tu logotipo e imágenes existentes (no incluye diseño de identidad visual o
               ilustraciones desde cero).<br />
-              • <strong>Dominio y Hosting:</strong> No van incluidos en el desarrollo base, pero al contratar nuestro
-              <strong>plan de mantenimiento</strong> te olvidas de ello: incluye hosting, dominio y soporte continuo.<br />
+              • <strong>Dominio y Hosting:</strong> Su configuración y costos se detallan en la cotización de cada proyecto.<br />
               • <strong>Garantía:</strong> Incluye 1 ronda de cambios tras la entrega. Cambios o secciones adicionales posteriores se
               cotizan de forma independiente.
             </p>
