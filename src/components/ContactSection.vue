@@ -5,6 +5,8 @@ const sent = ref(false);
 const isSubmitting = ref(false);
 const errorMessage = ref('');
 
+const whatsappUrl = `https://wa.me/${String.fromCharCode(53, 50, 55, 50, 48, 49, 50, 50, 56, 57, 51, 57)}`;
+
 const formData = ref({
   name: '',
   email: '',
@@ -72,9 +74,9 @@ const handleSubmit = async () => {
         </p>
         <a
           class="mt-6 inline-flex min-h-12 items-center gap-2 rounded bg-[#25D366] px-[18px] font-bold text-white shadow-lg transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-xl"
-          href="https://wa.me/527201228939"
+          :href="whatsappUrl"
           target="_blank"
-          rel="noopener">
+          rel="noopener noreferrer">
           <svg
             aria-hidden="true"
             class="h-[22px] w-[22px]"
